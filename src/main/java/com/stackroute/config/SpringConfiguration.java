@@ -16,15 +16,8 @@ public class SpringConfiguration {
     }
 
     @Bean
-    public Actor getActorBean2() {
-        return new Actor("Heath Ledger","Male",30);
+    public Actor actor2() {
+        return new Actor("Leonardo Di Caprio","Male",25);
     }
-
-    @Bean
-    public Actor getActorBean3() {
-        return new Actor("Jennifer Lawrence","Female",28);
-    }
-
-
 
 }

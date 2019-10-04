@@ -7,13 +7,13 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class Movie {
-    @Autowired
     Actor actor;
 
     public Movie() {
         System.out.println("Movie object constructed!");
     }
 
+    @Autowired
     public Movie(Actor actor) {
         this.actor = actor;
     }

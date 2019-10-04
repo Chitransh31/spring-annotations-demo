@@ -17,7 +17,6 @@ public class Main {
         Movie movieB = applicationContext.getBean(Movie.class);
         System.out.println("Actor Details: " + movieB.getActor());
 
-        System.out.println(movieA == movieB);
 
 
     }
