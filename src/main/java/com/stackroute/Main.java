@@ -14,10 +14,5 @@ public class Main {
         Movie movieA = applicationContext.getBean(Movie.class);
         System.out.println("Actor Details: " + movieA.getActor());
 
-        Movie movieB = applicationContext.getBean(Movie.class);
-        System.out.println("Actor Details: " + movieB.getActor());
-
-
-
     }
 }
