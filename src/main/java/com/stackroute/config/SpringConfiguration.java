@@ -1,7 +1,7 @@
 package com.stackroute.config;
 
+import com.stackroute.demo.BeanLifecycleDemoBean;
 import com.stackroute.domain.Actor;
-import com.stackroute.domain.Movie;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +18,11 @@ public class SpringConfiguration {
     @Bean
     public Actor actor2() {
         return new Actor("Leonardo Di Caprio","Male",25);
+    }
+
+    @Bean
+    public BeanLifecycleDemoBean getLifecycleBean() {
+        return new BeanLifecycleDemoBean();
     }
 
 }
