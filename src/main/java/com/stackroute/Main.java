@@ -11,9 +11,14 @@ public class Main {
 
         ApplicationContext applicationContext= new AnnotationConfigApplicationContext(SpringConfiguration.class);
 
-        Movie movie = applicationContext.getBean(Movie.class);
+        Movie movieA = applicationContext.getBean(Movie.class);
+        System.out.println("Actor Details: " + movieA.getActor());
 
-        System.out.println(movie);
+        Movie movieB = applicationContext.getBean(Movie.class);
+        System.out.println("Actor Details: " + movieB.getActor());
+
+        System.out.println(movieA == movieB);
+
 
     }
 }
